@@ -1,0 +1,470 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background:url(../img/wood_Ligero.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+header {
+    display: flex;
+    align-items:center;
+    background-color: darkred;
+    box-shadow: 0px 5px 10px  black;
+    height: fit-content;    
+    position:fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;   
+    }
+        nav img {
+            height: 9vh;
+            min-height: 60px;            
+        }
+        nav a{
+            font-size: 2vh;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+        }
+            nav a:hover {
+                color: gold;
+            }
+
+
+.slideshow{    
+    width: 100%;
+    height: calc(80vh - 50px);
+    margin-top: 70px;
+    background-color: #F5F5F5;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-out;
+    background-image: url('../img/slide1');
+    animation: banner 17s infinite linear;
+}
+
+
+@keyframes banner{
+    0%{
+        background-image: url('../img/slide1.jpg');
+    }
+    25%{
+        background-image: url('../img/slide1.jpg');
+    }
+
+
+    26%{
+        background-image: url('../img/slide2.jpg');
+    }
+    50%{
+        background-image: url('../img/slide2.jpg');
+    }
+
+
+    51%{
+        background-image: url('../img/slide3.jpg');
+    }
+    75%{
+        background-image: url('../img/slide3.jpg');
+    }
+    
+
+    76%{
+        background-image: url('../img/slide4.jpg');
+    }
+    100%{
+        background-image: url('../img/slide4.jpg');
+    }    
+
+}
+
+
+
+.slogan {
+    margin: 0 auto;
+    width: 100%;
+    height: fit-content;
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+    .slogan h1 {
+        margin: 40px;
+        font-family: 'Dancing Script', cursive;
+        color: gold;
+        font-size: 6vh;
+        text-align: center;
+    }
+
+
+.wrapper {
+    width: 100%;
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(../img/background_oferta.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    
+    }
+    
+    .wrapper .carousel {
+    display: flex;    
+    max-width: 90vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;  
+    overflow: hidden;
+    }
+    
+    .carousel .card {    
+    height: 30vw;      
+    min-height: 350px;
+    max-height: 730px;
+    
+    }
+    
+      
+    
+    #c1 {
+    background: url(../img/img1.png) no-repeat center center/cover;
+    background-size: contain;  
+    }
+    
+    #c2 {
+    background: url(../img/img2.png) no-repeat center center/cover;
+    background-size: contain;
+    }
+    
+    #c3 {
+    background: url(../img/img3.png) no-repeat center center/cover;
+    background-size: contain;
+    }
+    
+    #c4 {
+    background: url(../img/img4.png) no-repeat center center/cover;
+    background-size: contain;
+    }
+    
+    #c5 {
+    background: url(../img/img5.png) no-repeat center center/cover;
+    background-size: contain;
+    }
+    
+    #c6 {
+    background: url(../img/img6.png) no-repeat center center/cover;
+    background-size: contain;
+    }
+
+    #c7 {
+    background: url(../img/img7.png) no-repeat center center/cover;
+    background-size: contain;
+        }
+    
+    .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+    }
+    
+    .owl-dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    margin: 0 5px;
+    border: 2px solid #fff !important;
+    transition: all 0.3s ease;
+    }
+    
+    .owl-dot:hover,
+    .owl-dot.active {
+    background-color: #fff !important;
+    }
+    
+    .owl-prev,
+    .owl-next {
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    }
+    
+    .owl-prev {
+    left: 40px;
+    }
+    
+    .owl-next {
+    right: 20px;
+    }
+    
+    .fa-chevron-left,
+    .fa-chevron-right {
+    font-size: 30px;
+    color: #fff;
+    transition: all 0.2s;
+    }
+    
+    .fa-chevron-left:hover,
+    .fa-chevron-right:hover {
+    color: #777;
+    }
+
+
+
+.locales {
+    background-color: darkred;
+    padding: 15px;
+    
+}
+     
+.desayuno {
+    border: 3px solid white;
+    
+    display: grid;    
+    /*
+    background-image: url(images/background_oferta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    */
+    background-color: darkred;
+    gap: 20px;
+    padding: 25px;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px,100%),1fr));
+    justify-items: center;
+    text-align: center;    
+}
+
+.copy {
+    background-color:  rgba(139, 0, 0, 0.8);
+    width: 90%;
+    height: fit-content;
+    align-self: center;
+    color: white;    
+    
+}
+    .copy h2 {
+        font-size: 4.5vh;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .copy p {
+        font-size: 2.5vh;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        padding-bottom: 16px;
+        border-bottom: 3px solid white;
+    }
+    .circulos {
+        display: flex; 
+        padding-top: 20px;  
+        
+        height: 100%;       
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .circulo {        
+        border-radius: 100%;        
+        width: 15vh;        
+        height: 15vh;        
+    }
+        #pan {
+        background-image: url(../img/imgPan.jpg);
+        background-size: cover;
+        }
+        
+        #cafe {
+        background-image: url(../img/imgCafe.jpg);
+        background-size: cover;
+            }
+        #te {
+        background-image: url(../img/imgTe.jpg);
+        background-size: cover;
+            }
+        #infusion {
+        background-image: url(../img/imgInfusion.jpg);
+        background-size: cover;
+            }
+ 
+
+.carouselDesayuno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper2 {
+    width: 100%;    
+    min-width: 40vw;
+    height: fit-content;
+      
+    }
+        .wrapper2 .carousel2 {
+        display: flex;    
+        max-width: 100%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;  
+        overflow: hidden;
+        
+        }
+            .carousel2 .card {       
+                       
+            height: 30vw;      
+            min-height: 250px;
+            max-height: 730px;
+                                  
+            }
+
+            #desayuno1 {
+                background: url(../img/imgApanado.jpg) no-repeat center center/cover;
+                background-size: contain;              
+               
+            }
+            #desayuno2 {
+                background: url(../img/imgPescado.jpg) no-repeat center center/cover;
+                background-size: contain; 
+                 
+                }
+            #desayuno3 {
+                background: url(../img/imgChaufa.jpg) no-repeat center center/cover;
+                background-size: contain; 
+                   
+                }
+            #desayuno4 {
+                background: url(../img/imgCubana.jpg) no-repeat center center/cover;
+                background-size: contain; 
+                    
+                }
+            #desayuno5 {
+                background: url(../img/imgTortilla.jpg) no-repeat center center/cover;
+                background-size: contain; 
+                   
+                }
+            #desayuno6 {
+                background: url(../img/imgEspinaca.jpg) no-repeat center center/cover;
+                background-size: contain; 
+                    
+                }
+            #desayuno7 {
+                background: url(../img/imgMilanesa.jpg) no-repeat center center/cover;
+                background-size: contain; 
+                    
+                }
+                                                                           
+            
+
+.ubicacion {
+    display: grid;
+    background-color: gold;
+    padding: 45px;    
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px,100%),1fr));
+    justify-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+    .mapa {
+        width: 23vw;
+        min-width: 250px;
+        height: 23vw;
+        min-height: 250px;
+        
+    }
+
+    .direccion {       
+        display: grid;
+        color: darkred;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3vh;
+        border-left: 3px solid white;    
+        gap: 25px;
+        width: 100%;
+        height: 100%;        
+        
+    }
+    .direccion p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5vh;
+    }
+        .direccion div {
+            display: inline-block;
+            align-self: center;
+            justify-self: center;
+
+        }
+        .delivery img {
+            width: 1.5vw;
+            min-width: 20px;  
+        }
+        .redes img {
+            width: 3vw;
+            min-width: 30px;  
+        }
+
+footer {
+    height: fit-content;
+    padding: 45px;
+
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -5px 20px;
+    text-align: center;
+}
+
+    
+    footer p {
+        font-size: 2.5vh;
+        color: gold;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;       
+
+    }
+
+@media (max-width:800px){
+
+.restaurant_fondo, .hotel_fondo {
+display: flex;
+height: fit-content;
+justify-content: center;
+align-items: center;
+
+        } 
+.restaurant_copy, .hotel_copy {
+width: 70vw;
+height: fit-content;
+margin:20px;  
+margin-top:80px; 
+margin-bottom:80px;
+padding: 30px;
+background-color: rgba(139, 0, 0, 0.8);
+        }
+.slogan h1 {
+    margin: 15px;
+    font-size: 5vh;
+        }
+    }
+    
+
+

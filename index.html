@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon_viajero.ico" type="image/x-icon">
+    <title>El Viajero</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/logo_Ligero.png" alt="">
+            <a href="#">Inicio</a>
+            <a href="carta.html">Carta</a>
+            <a href="#">Locales</a>
+        </nav>
+
+    </header>
+
+<!--Slider de platos-->
+<section class="slideshow">
+</section> 
+<!--Slider de platos-->
+
+<section class="slogan">
+    <h1>
+        &#171; Cada vez mas cerca de usted &#187;
+    </h1>
+</section>
+
+
+<section class="wrapper">
+    <div class="carousel owl-carousel">
+      <div class="card" id="c1"></div>
+      <div class="card" id="c2"></div>
+      <div class="card" id="c3"></div>
+      <div class="card" id="c4"></div>
+      <div class="card" id="c5"></div>
+      <div class="card" id="c6"></div>
+      <div class="card" id="c7"></div>
+    </div>
+</section>
+
+
+
+
+<section class="locales">    
+    <article class="desayuno">
+        <div class="copy">
+            <h2>Desayuno Viajero</h2>
+            <p>Acompañado de pan, té, café o infusiones</p>
+            <div class="circulos">
+              <div class="circulo" id="pan"></div>
+              <div class="circulo" id="te"></div>
+              <div class="circulo" id="cafe"></div>              
+              <div class="circulo" id="infusion"></div>
+            </div>            
+        </div>
+        <div class="carouselDesayuno">
+            <div class="wrapper2">
+                <div class="carousel2 owl-carousel">
+                  <div class="card" id="desayuno1"></div>
+                  <div class="card" id="desayuno2"></div>
+                  <div class="card" id="desayuno3"></div>
+                  <div class="card" id="desayuno4"></div>
+                  <div class="card" id="desayuno5"></div>
+                  <div class="card" id="desayuno6"></div>
+                  <div class="card" id="desayuno7"></div>
+                </div>
+              </div>
+        </div>
+    </article>
+  </section>    
+
+  <article class="ubicacion">
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15720.17198270334!2d-76.24363385163625!3d-9.930377375046545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7c2e1a214c6fd%3A0x99f9262686481e0c!2sJir%C3%B3n%20Huallayco%20789%2C%20Hu%C3%A1nuco%2010001!5e0!3m2!1ses!2spe!4v1632684939583!5m2!1ses!2spe" style="border-radius: 100%; width:100%;height:100%;"></iframe>
+    </div>
+
+    <div class="direccion">
+      <div>
+        <h3>Ubícanos en:</h3>
+        <p>Jr. Huallayco 789</p>
+      </div>
+
+      <div class="delivery">
+        <h3>Delivery:</h3>
+        <p><img src="img/logoWhatsapp.png" alt="">  981 506 766</p>
+        <p><img src="img/logoWhatsapp.png" alt="">  983 322 226</p>
+      </div>    
+
+      <div class="redes">
+        <h3>Búscanos en:</h3>
+        <img src="img/logoFacebook.png" alt="">       
+      </div>   
+
+    </div>
+  </article>
+  
+    </main>
+
+
+    <footer>            
+        <p>© 2021 El Viajero. Todos los Derechos Reservados.</p>
+    </footer>
+
+    
+    <script>
+        $(".carousel").owlCarousel({
+          loop: true,
+          margin: 25,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
+          nav: true,
+          navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          }
+        })
+      </script>
+
+<script>
+    $(".carousel2").owlCarousel({
+      loop: true,
+      margin: 25,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      nav: true,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        },
+      }
+    })
+  </script>
+    
+</body>
+</html>

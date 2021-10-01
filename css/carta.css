@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background:url(../img/wood_Ligero.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+header {
+    display: flex;
+    align-items:center;
+    background-color: darkred;
+    box-shadow: 0px 5px 10px  black;
+    height: fit-content;    
+    position:fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;   
+    }
+        nav img {
+            height: 9vh;
+            min-height: 60px;            
+        }
+        nav a{
+            font-size: 2vh;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+        }
+            nav a:hover {
+                color: gold;
+            }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 70px;
+        background-color: rgba(0, 0, 0, .7); 
+        height: fit-content;
+        justify-content: center;
+        align-items: center; 
+        padding: 40px;
+    }
+    h1, h2 {
+        font-family: 'Dancing Script', cursive;
+        color: white;
+        font-size: 5rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .card {     
+        height: fit-content;
+        padding: 25px;
+        width: 90%;        
+        margin-bottom: 30px;
+        background-color: darkred;
+    }
+
+    .cardTitle {        
+        display: flex;
+        font-family: 'Dancing Script', cursive;
+        text-shadow: 3px 3px 0 rgba(0, 0, 0, .3); ;        
+        align-items: center;
+        color: white;
+        font-size: 4.5vh;
+        
+        text-decoration: none;        
+        padding: 25px;        
+        width: auto;
+        height: 80px;        
+        cursor: pointer;
+    }
+
+
+    /*
+        #card1 {
+            background-image: url(../img/chaufa.jpg);
+            background-position: top;
+            background-size: cover;
+       
+            
+        }
+        #card2 {
+            background-image: url(../img/chaufa.jpg);
+            background-position: top;
+            background-size: cover;
+        }
+        #card3 {
+            background-image: url(../img/chaufa.jpg);
+            background-position: top;
+            background-size: cover;
+        }
+
+        */
+
+
+    .cardContenido {
+        background-color: gold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: darkred;        
+        font-size: 1.2rem;              
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: auto auto;
+        border-left: 1px solid white;                    
+        overflow: hidden;
+        max-height: 0;
+        transition: all .5s ease-in;
+        }
+    .precio {        
+        display: grid;        
+        justify-items: end;
+        align-items: center; 
+    }
+    .plato {
+        display: grid;        
+        justify-items: left;
+        align-items: center; 
+    }
+    .card h5 {        
+        padding: 15px;
+    }
+
+
+    .ubicacion {
+        display: grid;
+        background-color: gold;
+        padding: 45px;    
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(auto-fit, minmax(min(250px,100%),1fr));
+        justify-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+    
+        .mapa {
+            width: 23vw;
+            min-width: 250px;
+            height: 23vw;
+            min-height: 250px;          
+    
+    
+        }
+        .direccion {       
+            display: grid;
+            color: darkred;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 3vh;
+            border-left: 3px solid white;    
+            gap: 25px;
+            width: 100%;
+            height: 100%;        
+            
+        }
+        .direccion p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5vh;
+        }
+            .direccion div {
+                display: inline-block;
+                align-self: center;
+                justify-self: center;
+    
+            }
+            .delivery img {
+                width: 1.5vw;
+                min-width: 20px;  
+            }
+            .redes img {
+                width: 3vw;
+                min-width: 30px;  
+            }
+
+
+footer {
+    height: fit-content;
+    padding: 45px;
+
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -5px 20px;
+    text-align: center;
+}
+
+    
+    footer p {
+        font-size: 2.5vh;
+        color: gold;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;       
+
+    }
+
+
+@media (min-width:1440px){
+    .precio {     
+        margin: 20px;   
+       }
+    .plato {
+        margin: 20px;   
+        }
+
+    .cardContenido {             
+        font-size: 3vh;           
+        
+        }
+    .cardTitle {        
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
